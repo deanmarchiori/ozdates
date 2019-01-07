@@ -14,9 +14,7 @@ knitr::opts_chunk$set(
 ```
 # ozdates
 
-[![Travis build status](https://travis-ci.org/deanmarchiori/ozdates.svg?branch=master)](https://travis-ci.org/deanmarchiori/ozdates)  
-
-[![Coverage status](https://codecov.io/gh/deanmarchiori/ozdates/branch/master/graph/badge.svg)](https://codecov.io/github/deanmarchiori/ozdates?branch=master)  
+[![Travis build status](https://travis-ci.org/deanmarchiori/ozdates.svg?branch=master)](https://travis-ci.org/deanmarchiori/ozdates)  [![Coverage status](https://codecov.io/gh/deanmarchiori/ozdates/branch/master/graph/badge.svg)](https://codecov.io/github/deanmarchiori/ozdates?branch=master)  [![Lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://img.shields.io/badge/lifecycle-experimental-orange.svg)
 
 
 
