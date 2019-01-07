@@ -15,7 +15,6 @@ BugReports: https://github.com/deanmarchiori/ozdates/issues
 Depends: R (>= 3.0.1)
 Suggests:
     covr,
-    testthat,
-    spelling
+    testthat
 Language: en-US
 RoxygenNote: 6.1.1
