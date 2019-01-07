@@ -1,0 +1,64 @@
+Date,Holiday Name,Information,More Information,Applicable To
+20170101,New Year's Day,New Year's Day is the first day of the calendar year and is celebrated each January 1st,,NAT
+20170102,Additional day,,,NAT
+20170126,Australia Day,Always celebrated on 26 January,,NAT
+20170212,Royal Hobart Regatta,,,TAS
+20170306,Labour Day,"Always on a Monday, creating a long weekend. It celebrates the eight-hour working day, a victory for workers in the mid-late 19th century.",http://www.commerce.wa.gov.au/labour-relations/public-holidays-western-australia,WA
+20170313,Eight Hours Day,"Always on a Monday, creating a long weekend. It celebrates the eight-hour working day, a victory for workers in the mid-late 19th century.",,TAS
+20170313,Canberra Day,"Held on the second Monday of March each year in Canberra, to celebrate the naming ceremony of AustraliaŐs capital which took place on 12 March 1913.",http://www.cmd.act.gov.au/communication/holidays,ACT
+20170313,March public holiday,The Holidays Act 1910 provides for the third Monday in May to be a public holiday. ch through the issuing of a special Proclamation by the Governor.,http://www.safework.sa.gov.au/show_page.jsp?id=2483#.U6tbuSInrho,SA
+20170313,Labour Day,"Always on a Monday, creating a long weekend. It celebrates the eight-hour working day, a victory for workers in the mid-late 19th century.",http://www.business.vic.gov.au/victorian-public-holidays-and-daylight-saving/victorian-public-holidays,VIC
+20170414,Good Friday,Easter is celebrated with Good Friday and Easter Monday creating a 4 day long weekend.,,NAT
+20170415,Easter Saturday,Easter Saturday is between Good Friday and Easter Sunday in Australia.,,ACT|NSW|NT|QLD|SA|VIC
+20170416,Easter Sunday,Public Holiday as part of Easter.,,ACT|NSW|QLD|VIC
+20170417,Easter Monday,Public Holiday as part of Easter.,,NAT
+20170425,ANZAC Day,Celebrated on the 25 April each year.,http://www.awm.gov.au/commemoration/anzac-day/,NAT
+20170501,May Day,"Always on a Monday, creating a long weekend. It celebrates the eight-hour working day, a victory for workers in the mid-late 19th century.",http://www.ocpe.nt.gov.au/working_in_the_ntps/legislation/public_holidays%0A,NT
+20170501,Labour Day,"Always on a Monday, creating a long weekend. It celebrates the eight-hour working day, a victory for workers in the mid-late 19th century.",,QLD
+20170605,Western Australia Day,Held on the first Monday in June each year and is a state holiday only.,http://www.commerce.wa.gov.au/labour-relations/public-holidays-western-australia,WA
+20170612,Queen's Birthday,Celebrated on second Monday in June except in Western Australia and Queensland.,https://www.gg.gov.au/queens-birthday-2014-honours-list,ACT|NSW|NT|SA|TAS|VIC
+20170807,Picnic Day,"Observed on the first Monday of August each year and is clebrated with a horse race, railway picnic and other social outings",http://www.ocpe.nt.gov.au/working_in_the_ntps/legislation/public_holidays%0A,NT
+20170807,Bank Holiday,,,NSW
+20170925,Queen's Birthday,Non-metropolitan local authorities in WA may celebrate the Queen's Birthday Public Holiday on an alternative date,http://www.commerce.wa.gov.au/labourrelations/content/Employers/Pay_rates_leave_and_conditions/Regional_Dates_for_the_Queens.html,WA
+20170925,Family and Community Day,A holiday for people to spend with their family and friends.,http://www.cmd.act.gov.au/communication/holidays,ACT
+20170929,AFL Grand Final,Friday before the AFL Grand Final,,VIC
+20171002,Labour Day,"Always on a Monday, creating a long weekend. It celebrates the eight-hour working day, a victory for workers in the mid-late 19th century.",,ACT|NSW|SA
+20171002,Queen's Birthday,Celebrated on First Monday in October in Queensland.,https://www.gg.gov.au/queens-birthday-2014-honours-list,QLD
+20171106,Recreation Day,,,TAS
+20171107,Melbourne Cup,All of Victoria unless alternate local holiday has been arranged by non-metro council.,http://www.business.vic.gov.au/victorian-public-holidays-and-daylight-saving/victorian-public-holidays,VIC
+20171224,Christmas Eve,Part-day public holiday from 7pm-12 midnight,http://www.safework.sa.gov.au/show_page.jsp?id=2483,NT|SA
+20171225,Christmas Day,Christmas Day is an annual holiday which celebrates the birth of Jesus Christ over 2000 years ago.,,NAT
+20171226,Boxing Day,Boxing Day occurs the day after Christmas. Sydney-to-Hobart yacht race and Boxing Day Test Match (Cricket) start on this day.,,ACT|NSW|NT|QLD|TAS|VIC|WA
+20171226,Proclamation Day,Occurs the day after Christmas Day.,http://www.safework.sa.gov.au/show_page.jsp?id=2483#.U6tbuSInrho,SA
+20171231,New Year's Eve,Part-day public holiday from 7pm-12 midnight,http://www.safework.sa.gov.au/show_page.jsp?id=2483,NT|SA
+20180101,New Year's Day,New Year's Day is the first day of the calendar year and is celebrated each January 1st,,NAT
+20180126,Australia Day,Always celebrated on 26 January,,NAT
+20180212,Royal Hobart Regatta,,,TAS
+20180305,Labour Day,"Always on a Monday, creating a long weekend. It celebrates the eight-hour working day, a victory for workers in the mid-late 19th century.",http://www.commerce.wa.gov.au/labour-relations/public-holidays-western-australia,WA
+20180312,Eight Hours Day,"Always on a Monday, creating a long weekend. It celebrates the eight-hour working day, a victory for workers in the mid-late 19th century.",,TAS
+20180312,Canberra Day,"Held on the second Monday of March each year in Canberra, to celebrate the naming ceremony of Australia's capital which took place on 12 March 1913.",http://www.cmd.act.gov.au/communication/holidays,ACT
+20180312,March public holiday,The Holidays Act 1910 provides for the third Monday in March to be a public holiday.,http://www.safework.sa.gov.au/show_page.jsp?id=2483#.U6tbuSInrho,SA
+20180312,Labour Day,"Always on a Monday, creating a long weekend. It celebrates the eight-hour working day, a victory for workers in the mid-late 19th century.",http://www.business.vic.gov.au/victorian-public-holidays-and-daylight-saving/victorian-public-holidays,VIC
+20180330,Good Friday,Easter is celebrated with Good Friday and Easter Monday creating a 4 day long weekend.,,NAT
+20180331,Easter Saturday,Easter Saturday is between Good Friday and Easter Sunday in Australia.,,ACT|NSW|NT|QLD|SA|VIC
+20180401,Easter Sunday,Public Holiday as part of Easter.,,ACT|NSW|QLD|VIC
+20180402,Easter Monday,Public Holiday as part of Easter.,,NAT
+20180425,ANZAC Day,Celebrated on the 25 April each year.,http://www.awm.gov.au/commemoration/anzac-day/,NAT
+20180507,May Day,"Always on a Monday, creating a long weekend. It celebrates the eight-hour working day, a victory for workers in the mid-late 19th century.",http://www.ocpe.nt.gov.au/working_in_the_ntps/legislation/public_holidays%0A,NT
+20180507,Labour Day,"Always on a Monday, creating a long weekend. It celebrates the eight-hour working day, a victory for workers in the mid-late 19th century.",,QLD
+20180528,Reconciliation Day,,,ACT
+20180604,Western Australia Day,Held on the first Monday in June each year and is a state holiday only.,http://www.commerce.wa.gov.au/labour-relations/public-holidays-western-australia,WA
+20180611,Queen's Birthday,Celebrated on second Monday in June except in Western Australia and Queensland.,https://www.gg.gov.au/queens-birthday-2014-honours-list,ACT|NSW|NT|SA|TAS|VIC
+20180806,Picnic Day,"Observed on the first Monday of August each year and is clebrated with a horse race, railway picnic and other social outings",http://www.ocpe.nt.gov.au/working_in_the_ntps/legislation/public_holidays%0A,NT
+20180806,Bank Holiday,,,NSW
+20180924,Queen's Birthday,Non-metropolitan local authorities in WA may celebrate the Queen's Birthday Public Holiday on an alternative date,http://www.commerce.wa.gov.au/labourrelations/content/Employers/Pay_rates_leave_and_conditions/Regional_Dates_for_the_Queens.html,WA
+20180928,Friday before the AFL Grand Final,Friday before the AFL Grand Final,,VIC
+20181001,Labour Day,"Always on a Monday, creating a long weekend. It celebrates the eight-hour working day, a victory for workers in the mid-late 19th century.",,ACT|NSW|SA
+20181001,Queen's Birthday,Celebrated on First Monday in October in Queensland.,https://www.gg.gov.au/queens-birthday-2014-honours-list,QLD
+20181105,Recreation Day,,,TAS
+20181106,Melbourne Cup,All of Victoria unless alternate local holiday has been arranged by non-metro council.,http://www.business.vic.gov.au/victorian-public-holidays-and-daylight-saving/victorian-public-holidays,VIC
+20181224,Christmas Eve,Part-day public holiday from 7pm-12 midnight,http://www.safework.sa.gov.au/show_page.jsp?id=2483,NT|SA
+20181225,Christmas Day,Christmas Day is an annual holiday which celebrates the birth of Jesus Christ over 2000 years ago.,,NAT
+20181226,Boxing Day,Boxing Day occurs the day after Christmas. Sydney-to-Hobart yacht race and Boxing Day Test Match (Cricket) start on this day.,,ACT|NSW|NT|QLD|TAS|VIC|WA
+20181226,Proclamation Day,Occurs the day after Christmas Day.,http://www.safework.sa.gov.au/show_page.jsp?id=2483#.U6tbuSInrho,SA
+20181231,New Year's Eve,Part-day public holiday from 7pm-12 midnight,http://www.safework.sa.gov.au/show_page.jsp?id=2483,NT|SA
