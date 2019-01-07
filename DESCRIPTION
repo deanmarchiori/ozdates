@@ -1,14 +1,22 @@
 Package: ozdates
-Title: What the Package Does (One Line, Title Case)
+Title: Important Australian Dates
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Dean",
+           family = "Marchiori",
            role = c("aut", "cre"),
-           email = "first.last@example.com")
-Description: What the package does (one paragraph).
-License: What license it uses
+           email = "deanmarchiori@gmail.com")
+Description: Data and tools for working with important Australian dates such as public holidays.    
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/deanmarchiori/ozdates
-BugReports: https://github.com/deanmarchiori/ozdates/issues
+BugReports: https://github.com/deanmarchiori/ozdates/issues  
+Depends: 
+    R (>= 3.1)  
+Suggests: 
+    covr,
+    testthat,
+    spelling
+Language: en-US
+RoxygenNote: 6.1.1
