@@ -16,7 +16,11 @@ knitr::opts_chunk$set(
 
 [![Travis build status](https://travis-ci.org/deanmarchiori/ozdates.svg?branch=master)](https://travis-ci.org/deanmarchiori/ozdates)   ![](https://img.shields.io/badge/lifecycle-experimental-orange.svg) 
 
-The goal of `ozdates` is to provide historical data to help deal with important Australian dates, such as public holidays, when conducting time series modelling.  
+The goal of `ozdates` is to provide historical data of important Australian dates to help with data analysis and time series modelling.  
+
+Current features:  
+
+* `aus_public_holidays`: Australian Public Holidays Dates Machine Readable Dataset - tranformed into tidy format. (Source: https://data.gov.au/dataset/australian-holidays-machine-readable-dataset)
 
 ## Installation
 
@@ -47,14 +51,10 @@ nsw_hols
 any(nsw_hols$date %within% interval(ymd("2018-04-01"), ymd("2018-05-30")))
 ```
 
-## Source  
-
-The data on Australian public holidays were sourced from data.gov.au and is originally based on the data sets at [Australian Public Holidays Dates Machine Readable Dataset](https://data.gov.au/dataset/b1bc6077-dadd-4f61-9f8c-002ab2cdff10).    
-
-These data are covered under the 	[Creative Commons Attribution 3.0 Australia](https://creativecommons.org/licenses/by/3.0/au/)
-
 
 -----
 
-Please note that the 'ozdates' project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.  
+Please note that the 'ozdates' project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.    
+
+The use of data in this package must conform with the licence conditions it was published under. See [Creative Commons Attribution 3.0 Australia](https://creativecommons.org/licenses/by/3.0/au/)
 
