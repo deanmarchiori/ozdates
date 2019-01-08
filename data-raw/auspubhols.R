@@ -75,7 +75,8 @@ aus_public_holidays <- raw_2019 %>%
   select(-idx) %>%
   unique() %>%
   mutate(Date = lubridate::ymd(Date)) %>%
-  janitor::clean_names()
+  janitor::clean_names() %>%
+  arrange(date)
 
 
 # save --------------------------------------------------------------------

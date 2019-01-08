@@ -4,13 +4,26 @@
 \name{aus_public_holidays}
 \alias{aus_public_holidays}
 \title{Australian Public Holidays}
-\format{A data frame with six variables: \code{tbc}}
+\format{A data frame with five variables:
+\describe{
+\item{date}{public holiday date}
+\item{holiday_name}{public holiday description}
+\item{information}{description of the public holiday}
+\item{more_information}{usually a link to further information or source}
+\item{jurisdiction}{the state in which the holiday applies}
+}}
+\source{
+\url{https://data.gov.au/dataset/b1bc6077-dadd-4f61-9f8c-002ab2cdff10}
+}
 \usage{
 aus_public_holidays
 }
 \description{
-This data was collected from the Australian Public Holidays page on australia.gov.au. It is being republished in a machine-readable
-format on data.gov.au. The dataset is a single CSV covering all states and territories for 2019. This data is correct at the time of
+This data was collected from the Australian Public Holidays page on australia.gov.au. It is republished in a machine-readable
+format on data.gov.au. The dataset is an aggregate of published public holiday data on data.gov.au from 2014-2019. This data is correct at the time of
 publishing but is subject to change.
+}
+\details{
+Note: The use of this data must comply with Creative Commons Attribution 3.0 Australia
 }
 \keyword{datasets}
