@@ -1,12 +1,12 @@
 Package: ozdates
-Title: Important Australian Dates
+Title: Important Australian Dates for Data Analysis
 Version: 0.1.0.9000
 Authors@R: 
     person(given = "Dean",
            family = "Marchiori",
            role = c("aut", "cre"),
            email = "deanmarchiori@gmail.com")
-Description: Data and tools for working with important Australian dates such as public holidays.    
+Description: The goal of ozdates is to provide historical data of important Australian dates to help with data analysis and time series modelling.   
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
