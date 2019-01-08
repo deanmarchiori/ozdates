@@ -13,8 +13,13 @@ Australian dates to help with data analysis and time series modelling.
 Current features:
 
   - `aus_public_holidays`: Australian Public Holidays Dates Machine
-    Readable Dataset - tranformed into tidy format. (Source:
+    Readable Dataset 2014-2019 - transformed into tidy format. (Source:
     <https://data.gov.au/dataset/australian-holidays-machine-readable-dataset>)
+
+  - `aus_daylight_saving`: Historical start and end time of Australian
+    daylight saving time dates according to the Australian Bureau of
+    Meteorology. (Source:
+    <http://www.bom.gov.au/climate/averages/tables/dst_times.shtml>)
 
 ## Installation
 
@@ -25,9 +30,11 @@ You can install the development version of ozdates from
 devtools::install_github("deanmarchiori/ozdates")
 ```
 
-## Example
+## Examples
 
-This is a basic example which shows you how to solve a common problem:
+Some basic examples:
+
+### Public Holidays
 
 ``` r
 library(ozdates)
@@ -62,6 +69,26 @@ any(nsw_hols$date %within% interval(ymd("2018-04-01"), ymd("2018-05-30")))
 #> [1] TRUE
 ```
 
+### Daylight Saving Time
+
+``` r
+library(ozdates)
+library(dplyr)
+library(lubridate)
+
+# Which states participate in DST in 2017 and on what dates?
+aus_daylight_saving %>% 
+  filter(season_start == 2017)
+#> # A tibble: 5 x 4
+#>   season_start state dst_start_date dst_finish_date
+#>          <dbl> <chr> <date>         <date>         
+#> 1         2017 TAS   2017-10-01     2018-04-01     
+#> 2         2017 VIC   2017-10-01     2018-04-01     
+#> 3         2017 ACT   2017-10-01     2018-04-01     
+#> 4         2017 NSW   2017-10-01     2018-04-01     
+#> 5         2017 SA    2017-10-01     2018-04-01
+```
+
 -----
 
 Please note that the ‘ozdates’ project is released with a [Contributor
@@ -69,5 +96,10 @@ Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project,
 you agree to abide by its terms.
 
 The use of data in this package must conform with the licence conditions
-it was published under. See [Creative Commons Attribution 3.0
-Australia](https://creativecommons.org/licenses/by/3.0/au/)
+it was published under. See data documentation for licence and copyright
+information.
+
+While care is taken when transforming and representing data. No
+responsibility is taken for inaccuracies or loss arising from the use of
+this software and data. See the [LICENSE](LICENSE.md) for more
+information.

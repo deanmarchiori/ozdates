@@ -20,7 +20,9 @@ The goal of `ozdates` is to provide historical data of important Australian date
 
 Current features:  
 
-* `aus_public_holidays`: Australian Public Holidays Dates Machine Readable Dataset - tranformed into tidy format. (Source: https://data.gov.au/dataset/australian-holidays-machine-readable-dataset)
+* `aus_public_holidays`: Australian Public Holidays Dates Machine Readable Dataset 2014-2019 - transformed into tidy format. (Source: https://data.gov.au/dataset/australian-holidays-machine-readable-dataset)  
+
+* `aus_daylight_saving`: Historical start and end time of Australian daylight saving time dates according to the Australian Bureau of Meteorology. (Source: http://www.bom.gov.au/climate/averages/tables/dst_times.shtml)  
 
 ## Installation
 
@@ -30,11 +32,13 @@ You can install the development version of ozdates from [Github](https://github.
 devtools::install_github("deanmarchiori/ozdates")
 ```
 
-## Example
+## Examples
 
-This is a basic example which shows you how to solve a common problem:
+Some basic examples:  
 
-```{r example, message=FALSE, warning=FALSE}
+### Public Holidays
+
+```{r example_pubhol, message=FALSE, warning=FALSE}
 library(ozdates)
 library(dplyr)
 library(lubridate)
@@ -51,10 +55,24 @@ nsw_hols
 any(nsw_hols$date %within% interval(ymd("2018-04-01"), ymd("2018-05-30")))
 ```
 
+### Daylight Saving Time  
+
+```{r example_dst, message=FALSE, warning=FALSE}
+library(ozdates)
+library(dplyr)
+library(lubridate)
+
+# Which states participate in DST in 2017 and on what dates?
+aus_daylight_saving %>% 
+  filter(season_start == 2017)
+
+```
 
 -----
 
-Please note that the 'ozdates' project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.    
+Please note that the 'ozdates' project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.     
 
-The use of data in this package must conform with the licence conditions it was published under. See [Creative Commons Attribution 3.0 Australia](https://creativecommons.org/licenses/by/3.0/au/)
+The use of data in this package must conform with the licence conditions it was published under. See data documentation for licence and copyright information.   
+
+While care is taken when transforming and representing data. No responsibility is taken for inaccuracies or loss arising from the use of this software and data. See the [LICENSE](LICENSE.md) for more information.  
 
