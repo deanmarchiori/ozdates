@@ -8,8 +8,8 @@ status](https://travis-ci.org/deanmarchiori/ozdates.svg?branch=master)](https://
 ![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)
 
 The goal of `ozdates` is to provide historical data to help deal with
-important Australian dates such as public holidays when conducting time
-series modelling.
+important Australian dates, such as public holidays, when conducting
+time series modelling.
 
 ## Installation
 
@@ -60,8 +60,8 @@ any(nsw_hols$date %within% interval(ymd("2018-04-01"), ymd("2018-05-30")))
 ## Source
 
 The data on Australian public holidays were sourced from data.gov.au and
-is originally based on the datasets at [Australian Public Holidays Dates
-Machine Readable
+is originally based on the data sets at [Australian Public Holidays
+Dates Machine Readable
 Dataset](https://data.gov.au/dataset/b1bc6077-dadd-4f61-9f8c-002ab2cdff10).
 
 These data are covered under the [Creative Commons Attribution 3.0

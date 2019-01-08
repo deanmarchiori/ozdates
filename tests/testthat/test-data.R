@@ -1,5 +1,4 @@
 context("public holiday data tests")
-library(lubridate)
 
 test_that("Data is a data frame", {
   expect_true(is.data.frame(aus_public_holidays))
@@ -22,27 +21,27 @@ test_that("Jurisdiction col contains only AUS States", {
 })
 
 test_that("There are data from 2014", {
-  expect_true(c(2014) %in% unique(year(aus_public_holidays$date)))
+  expect_true("2014" %in% format(aus_public_holidays$date, "%Y"))
   })
 
 test_that("There are data from 2015", {
-  expect_true(c(2015) %in% unique(year(aus_public_holidays$date)))
+  expect_true("2015" %in% format(aus_public_holidays$date, "%Y"))
 })
 
 test_that("There are data from 2016", {
-  expect_true(c(2016) %in% unique(year(aus_public_holidays$date)))
+  expect_true("2016" %in% format(aus_public_holidays$date, "%Y"))
 })
 
 test_that("There are data from 2017", {
-  expect_true(c(2017) %in% unique(year(aus_public_holidays$date)))
+  expect_true("2017" %in% format(aus_public_holidays$date, "%Y"))
 })
 
 test_that("There are data from 2018", {
-  expect_true(c(2018) %in% unique(year(aus_public_holidays$date)))
+  expect_true("2018" %in% format(aus_public_holidays$date, "%Y"))
 })
 
 test_that("There are data from 2019", {
-  expect_true(c(2019) %in% unique(year(aus_public_holidays$date)))
+  expect_true("2019" %in% format(aus_public_holidays$date, "%Y"))
 })
 
 
