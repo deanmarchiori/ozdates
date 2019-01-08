@@ -17,7 +17,8 @@ aus_daylight_saving <- dst_raw %>%
          dst_finish_date = lubridate::dmy(dst_finish_date)) %>%
   separate(col = state, into = paste0("state", 1:6), sep = "\\,", fill = "right") %>%
   gather(idx, state, paste0("state", 1:6), na.rm = TRUE) %>%
-  mutate(season_start = lubridate::year(dst_start_date)) %>%
+  mutate(season_start = lubridate::year(dst_start_date),
+         state = str_trim(state)) %>%
   select(season_start, state, dst_start_date, dst_finish_date) %>%
   arrange(dst_start_date)
 
@@ -25,3 +26,4 @@ aus_daylight_saving <- dst_raw %>%
 # save --------------------------------------------------------------------
 write_csv(aus_daylight_saving, "data-raw/aus_daylight_saving.csv")
 usethis::use_data(aus_daylight_saving, overwrite = TRUE, compress = 'xz')
+

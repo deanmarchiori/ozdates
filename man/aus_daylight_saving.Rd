@@ -18,7 +18,7 @@
 Use in accordance with copyright conditions: \url{http://www.bom.gov.au/other/copyright.shtml?ref=ftr}
 }
 \description{
-This data shows the start and end time of Australian daylight saving time
+This data shows the historical start and end time of Australian daylight saving time
 dates according to the Australian Bureau of Meterology.
 }
 \details{

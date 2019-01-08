@@ -22,7 +22,7 @@
 
 #' Australian Daylight Saving Time Dates
 #'
-#' This data shows the start and end time of Australian daylight saving time
+#' This data shows the historical start and end time of Australian daylight saving time
 #' dates according to the Australian Bureau of Meterology.
 #'
 #' In all the cases listed, the change to Daylight Saving Time took place at
