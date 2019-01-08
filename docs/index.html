@@ -79,8 +79,8 @@
 <p>The goal of <code>ozdates</code> is to provide historical data of important Australian dates to help with data analysis and time series modelling.</p>
 <p>Current features:</p>
 <ul>
-<li>
-<code>aus_public_holidays</code>: Australian Public Holidays Dates Machine Readable Dataset - tranformed into tidy format. (Source: <a href="https://data.gov.au/dataset/australian-holidays-machine-readable-dataset" class="uri">https://data.gov.au/dataset/australian-holidays-machine-readable-dataset</a>)</li>
+<li><p><code>aus_public_holidays</code>: Australian Public Holidays Dates Machine Readable Dataset 2014-2019 - transformed into tidy format. (Source: <a href="https://data.gov.au/dataset/australian-holidays-machine-readable-dataset" class="uri">https://data.gov.au/dataset/australian-holidays-machine-readable-dataset</a>)</p></li>
+<li><p><code>aus_daylight_saving</code>: Historical start and end time of Australian daylight saving time dates according to the Australian Bureau of Meteorology. (Source: <a href="http://www.bom.gov.au/climate/averages/tables/dst_times.shtml" class="uri">http://www.bom.gov.au/climate/averages/tables/dst_times.shtml</a>)</p></li>
 </ul>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
@@ -88,10 +88,13 @@
 <p>You can install the development version of ozdates from <a href="https://github.com/deanmarchiori/ozdates">Github</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">devtools<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/devtools/topics/reexports">install_github</a></span>(<span class="st">"deanmarchiori/ozdates"</span>)</a></code></pre></div>
 </div>
-<div id="example" class="section level2">
+<div id="examples" class="section level2">
 <h2 class="hasAnchor">
-<a href="#example" class="anchor"></a>Example</h2>
-<p>This is a basic example which shows you how to solve a common problem:</p>
+<a href="#examples" class="anchor"></a>Examples</h2>
+<p>Some basic examples:</p>
+<div id="public-holidays" class="section level3">
+<h3 class="hasAnchor">
+<a href="#public-holidays" class="anchor"></a>Public Holidays</h3>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(ozdates)</a>
 <a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(dplyr)</a>
 <a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(lubridate)</a>
@@ -122,9 +125,30 @@
 <a class="sourceLine" id="cb2-28" data-line-number="28"><span class="co"># Are there any public holidays in the next 2 months?</span></a>
 <a class="sourceLine" id="cb2-29" data-line-number="29"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/any">any</a></span>(nsw_hols<span class="op">$</span>date <span class="op">%within%</span><span class="st"> </span><span class="kw">interval</span>(<span class="kw">ymd</span>(<span class="st">"2018-04-01"</span>), <span class="kw">ymd</span>(<span class="st">"2018-05-30"</span>)))</a>
 <a class="sourceLine" id="cb2-30" data-line-number="30"><span class="co">#&gt; [1] TRUE</span></a></code></pre></div>
+</div>
+<div id="daylight-saving-time" class="section level3">
+<h3 class="hasAnchor">
+<a href="#daylight-saving-time" class="anchor"></a>Daylight Saving Time</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(ozdates)</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(dplyr)</a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(lubridate)</a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="co"># Which states participate in DST in 2017 and on what dates?</span></a>
+<a class="sourceLine" id="cb3-6" data-line-number="6">aus_daylight_saving <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb3-7" data-line-number="7"><span class="st">  </span><span class="kw"><a href="https://www.rdocumentation.org/packages/stats/topics/filter">filter</a></span>(season_start <span class="op">==</span><span class="st"> </span><span class="dv">2017</span>)</a>
+<a class="sourceLine" id="cb3-8" data-line-number="8"><span class="co">#&gt; # A tibble: 5 x 4</span></a>
+<a class="sourceLine" id="cb3-9" data-line-number="9"><span class="co">#&gt;   season_start state dst_start_date dst_finish_date</span></a>
+<a class="sourceLine" id="cb3-10" data-line-number="10"><span class="co">#&gt;          &lt;dbl&gt; &lt;chr&gt; &lt;date&gt;         &lt;date&gt;         </span></a>
+<a class="sourceLine" id="cb3-11" data-line-number="11"><span class="co">#&gt; 1         2017 TAS   2017-10-01     2018-04-01     </span></a>
+<a class="sourceLine" id="cb3-12" data-line-number="12"><span class="co">#&gt; 2         2017 VIC   2017-10-01     2018-04-01     </span></a>
+<a class="sourceLine" id="cb3-13" data-line-number="13"><span class="co">#&gt; 3         2017 ACT   2017-10-01     2018-04-01     </span></a>
+<a class="sourceLine" id="cb3-14" data-line-number="14"><span class="co">#&gt; 4         2017 NSW   2017-10-01     2018-04-01     </span></a>
+<a class="sourceLine" id="cb3-15" data-line-number="15"><span class="co">#&gt; 5         2017 SA    2017-10-01     2018-04-01</span></a></code></pre></div>
 <hr>
 <p>Please note that the ‘ozdates’ project is released with a <a href="CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
-<p>The use of data in this package must conform with the licence conditions it was published under. See <a href="https://creativecommons.org/licenses/by/3.0/au/">Creative Commons Attribution 3.0 Australia</a></p>
+<p>The use of data in this package must conform with the licence conditions it was published under. See data documentation for licence and copyright information.</p>
+<p>While care is taken when transforming and representing data. No responsibility is taken for inaccuracies or loss arising from the use of this software and data. See the <a href="LICENSE.html">LICENSE</a> for more information.</p>
+</div>
 </div>
 </div>
   </div>
