@@ -14,7 +14,6 @@
 #' \item{more_information}{usually a link to further information or source}
 #' \item{jurisdiction}{the state in which the holiday applies}
 #' }
-#' @source \url{https://search.data.gov.au/dataset/ds-dga-b1bc6077-dadd-4f61-9f8c-002ab2cdff10/details?q=public%20holidays}
 #' @source \url{https://data.gov.au/dataset/b1bc6077-dadd-4f61-9f8c-002ab2cdff10}
 #'
 "aus_public_holidays"
