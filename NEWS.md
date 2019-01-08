@@ -1,4 +1,9 @@
-# ozdates 0.1.0.9000
+# ozdates 0.1.0.9000  
+
+## Minor Changes  
+* Added Australian Daylight Saving Time Dates  
+* Added pkgdown site  
+* Documentation and README updates  
 
 # ozdates 0.1.0  
 

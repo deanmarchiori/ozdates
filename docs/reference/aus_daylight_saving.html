@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • ozdates</title>
+<title>Australian Daylight Saving Time Dates — aus_daylight_saving • ozdates</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,7 +30,11 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Australian Daylight Saving Time Dates — aus_daylight_saving" />
+
+<meta property="og:description" content="This data shows the historical start and end time of Australian daylight saving time
+dates according to the Australian Bureau of Meterology." />
+<meta name="twitter:card" content="summary" />
 
 
 
@@ -47,7 +51,7 @@
   </head>
 
   <body>
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -97,48 +101,70 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Australian Daylight Saving Time Dates</h1>
+    <small class="dont-index">Source: <a href='https://github.com/deanmarchiori/ozdates/blob/master/R/data.R'><code>R/data.R</code></a></small>
+    <div class="hidden name"><code>aus_daylight_saving.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    
+    <p>This data shows the historical start and end time of Australian daylight saving time
+dates according to the Australian Bureau of Meterology.</p>
+    
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='no'>aus_daylight_saving</span></pre>
+        
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      <tr>
-        
-        <td>
-          <p><code><a href="aus_daylight_saving.html">aus_daylight_saving</a></code> </p>
-        </td>
-        <td><p>Australian Daylight Saving Time Dates</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="aus_public_holidays.html">aus_public_holidays</a></code> </p>
-        </td>
-        <td><p>Australian Public Holidays</p></td>
-      </tr>
-    </tbody>
-    </table>
+    <p>A data frame with four variables:</p><dl class='dl-horizontal'>
+<dt>season_start</dt><dd><p>year of the starting period of DST</p></dd>
+<dt>state</dt><dd><p>state the time is adjusted for</p></dd>
+<dt>dst_start_date</dt><dd><p>start date of DST, with the change occuring at 0200 Local Standard Time</p></dd>
+<dt>dst_finish_date</dt><dd><p>end date of DST, with the change from DST to standard time at 0300</p></dd>
+</dl>
+    
+    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
+
+    <p><a href='http://www.bom.gov.au/climate/averages/tables/dst_times.shtml'>http://www.bom.gov.au/climate/averages/tables/dst_times.shtml</a></p>
+    
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>In all the cases listed, the change to Daylight Saving Time took place at
+0200 Local Standard Time on the day concerned, and from Daylight Saving Time
+to standard time at 0300. Data Current as of : 2017-12-12</p>
+    
+    <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>
+
+    <p>The Bureau of Meteorology does not have responsibility for managing
+Daylight Saving Time. This is a State responsibility and you should contact
+the relevant State Government authority
+<a href='https://www.australia.gov.au/about-australia/facts-and-figures/time-zones-and-daylight-saving'>https://www.australia.gov.au/about-australia/facts-and-figures/time-zones-and-daylight-saving</a>.</p>
+    
+    <h2 class="hasAnchor" id="licence-and-copyright"><a class="anchor" href="#licence-and-copyright"></a>Licence and Copyright</h2>
+
+    
+    <p>Use in accordance with copyright conditions: <a href='http://www.bom.gov.au/other/copyright.shtml?ref=ftr'>http://www.bom.gov.au/other/copyright.shtml?ref=ftr</a></p>
+    
+
   </div>
-
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-all-functions">All functions</a></li>
-    </ul>
+      
+      <li><a href="#format">Format</a></li>
+
+      <li><a href="#source">Source</a></li>
+
+      <li><a href="#details">Details</a></li>
+
+      <li><a href="#note">Note</a></li>
+
+      <li><a href="#licence-and-copyright">Licence and Copyright</a></li>
+          </ul>
+
   </div>
 </div>
 
