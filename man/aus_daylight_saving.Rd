@@ -9,13 +9,13 @@
 \item{season_start}{year of the starting period of DST}
 \item{state}{state the time is adjusted for}
 \item{dst_start_date}{start date of DST, with the change occuring at 0200 Local Standard Time}
-\item{dst_finish_time}{end date of DST, with the change from DST to standard time at 0300}
+\item{dst_finish_date}{end date of DST, with the change from DST to standard time at 0300}
 }}
 \source{
 \url{http://www.bom.gov.au/climate/averages/tables/dst_times.shtml}
 }
 \usage{
-Use in accordance with copyright conditions: \url{http://www.bom.gov.au/other/copyright.shtml?ref=ftr}
+aus_daylight_saving
 }
 \description{
 This data shows the historical start and end time of Australian daylight saving time
@@ -32,4 +32,9 @@ Daylight Saving Time. This is a State responsibility and you should contact
 the relevant State Government authority
 \url{https://www.australia.gov.au/about-australia/facts-and-figures/time-zones-and-daylight-saving}.
 }
+\section{Licence and Copyright}{
+
+Use in accordance with copyright conditions: \url{http://www.bom.gov.au/other/copyright.shtml?ref=ftr}
+}
+
 \keyword{datasets}

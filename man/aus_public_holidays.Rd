@@ -16,7 +16,7 @@
 \url{https://data.gov.au/dataset/b1bc6077-dadd-4f61-9f8c-002ab2cdff10}
 }
 \usage{
-The use of this data must comply with Creative Commons Attribution 3.0 Australia: \url{https://creativecommons.org/licenses/by/3.0/au/}
+aus_public_holidays
 }
 \description{
 The dataset is an aggregate of published public holiday data on data.gov.au from 2014-2019.
@@ -25,4 +25,9 @@ The dataset is an aggregate of published public holiday data on data.gov.au from
 This data was collected from the Australian Public Holidays page on australia.gov.au. It is republished in a machine-readable
 format on data.gov.au. The dataset is an aggregate of published public holiday data on data.gov.au from 2014-2019. This data is correct at the time of publishing but is subject to change.
 }
+\section{Licence and Copyright}{
+
+The use of this data must comply with Creative Commons Attribution 3.0 Australia: \url{https://creativecommons.org/licenses/by/3.0/au/}
+}
+
 \keyword{datasets}
