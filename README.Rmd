@@ -14,11 +14,9 @@ knitr::opts_chunk$set(
 ```
 # ozdates
 
-[![Travis build status](https://travis-ci.org/deanmarchiori/ozdates.svg?branch=master)](https://travis-ci.org/deanmarchiori/ozdates)  [![Coverage status](https://codecov.io/gh/deanmarchiori/ozdates/branch/master/graph/badge.svg)](https://codecov.io/github/deanmarchiori/ozdates?branch=master)  [![Lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://img.shields.io/badge/lifecycle-experimental-orange.svg)
+[![Travis build status](https://travis-ci.org/deanmarchiori/ozdates.svg?branch=master)](https://travis-ci.org/deanmarchiori/ozdates)   ![](https://img.shields.io/badge/lifecycle-experimental-orange.svg) 
 
-
-
-The goal of ozdates is to provide data and tools to help deal with important Australian dates such as public holidays when conducting time series modelling.  
+The goal of `ozdates` is to provide historical data to help deal with important Australian dates such as public holidays when conducting time series modelling.  
 
 ## Installation
 
@@ -32,7 +30,31 @@ devtools::install_github("deanmarchiori/ozdates")
 
 This is a basic example which shows you how to solve a common problem:
 
-```{r example}
-## basic example code
+```{r example, message=FALSE, warning=FALSE}
+library(ozdates)
+library(dplyr)
+library(lubridate)
+
+# What holidays occured in New South Wales in 2018?
+nsw_hols <- aus_public_holidays %>% 
+  filter(jurisdiction == "NSW",
+         year(date) == "2018") %>% 
+  select(date, holiday_name, jurisdiction)
+
+nsw_hols
+
+# Are there any public holidays in the next 2 months?
+any(nsw_hols$date %within% interval(ymd("2018-04-01"), ymd("2018-05-30")))
 ```
+
+## Source  
+
+The data on Australian public holidays were sourced from data.gov.au and is originally based on the datasets at [Australian Public Holidays Dates Machine Readable Dataset](https://data.gov.au/dataset/b1bc6077-dadd-4f61-9f8c-002ab2cdff10).    
+
+These data are covered under the 	[Creative Commons Attribution 3.0 Australia](https://creativecommons.org/licenses/by/3.0/au/)
+
+
+-----
+
+Please note that the 'ozdates' project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.  
 
