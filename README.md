@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# ozdates
+# ozdates <img src="man/figures/ozdates_hex.png" align="right" width="140" />
 
 [![Travis build
 status](https://travis-ci.org/deanmarchiori/ozdates.svg?branch=master)](https://travis-ci.org/deanmarchiori/ozdates)
