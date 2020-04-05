@@ -12,6 +12,11 @@ test_that("Data has five columns", {
   expect_equal(ncol(aus_public_holidays), 5)
 })
 
+test_that("col names correct", {
+  expect_true(all(colnames(aus_public_holidays) == c("date", "holiday_name", "information",
+                                                   "more_information", "jurisdiction")))
+})
+
 test_that("date column is type date", {
   expect_is(aus_public_holidays$date, "Date")
 })
@@ -43,5 +48,15 @@ test_that("There are data from 2018", {
 test_that("There are data from 2019", {
   expect_true("2019" %in% format(aus_public_holidays$date, "%Y"))
 })
+
+test_that("There are data from 2020", {
+  expect_true("2020" %in% format(aus_public_holidays$date, "%Y"))
+})
+
+test_that("There are data from 2021", {
+  expect_true("2021" %in% format(aus_public_holidays$date, "%Y"))
+})
+
+
 
 
