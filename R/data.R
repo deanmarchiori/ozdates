@@ -1,9 +1,9 @@
 #' Australian Public Holidays
 #'
-#' The dataset is an aggregate of published public holiday data on data.gov.au from 2014-2019.
+#' The dataset is an aggregate of published public holiday data on data.gov.au from 2014-2021.
 #'
 #' This data was collected from the Australian Public Holidays page on australia.gov.au. It is republished in a machine-readable
-#' format on data.gov.au. The dataset is an aggregate of published public holiday data on data.gov.au from 2014-2019. This data is correct at the time of publishing but is subject to change.
+#' format on data.gov.au. The dataset is an aggregate of published public holiday data on data.gov.au from 2014-2021. This data is correct at the time of publishing but is subject to change.
 #'
 #'
 #' @format A data frame with five variables:
@@ -21,7 +21,7 @@
 #'
 "aus_public_holidays"
 
-#' Australian Daylight Saving Time Dates
+#' Australian Daylight Saving Time Historical Dates
 #'
 #' This data shows the historical start and end time of Australian daylight saving time
 #' dates according to the Australian Bureau of Meterology.

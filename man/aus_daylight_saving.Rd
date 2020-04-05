@@ -3,7 +3,7 @@
 \docType{data}
 \name{aus_daylight_saving}
 \alias{aus_daylight_saving}
-\title{Australian Daylight Saving Time Dates}
+\title{Australian Daylight Saving Time Historical Dates}
 \format{A data frame with four variables:
 \describe{
 \item{season_start}{year of the starting period of DST}
