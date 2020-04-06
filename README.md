@@ -27,7 +27,7 @@ You can install the development version of ozdates from
 [Github](https://github.com/deanmarchiori/ozdates) with:
 
 ``` r
-devtools::install_github("deanmarchiori/ozdates")
+remotes::install_github("deanmarchiori/ozdates")
 ```
 
 ## Examples
