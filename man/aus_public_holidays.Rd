@@ -19,11 +19,11 @@
 aus_public_holidays
 }
 \description{
-The dataset is an aggregate of published public holiday data on data.gov.au from 2014-2019.
+The dataset is an aggregate of published public holiday data on data.gov.au from 2014-2021.
 }
 \details{
 This data was collected from the Australian Public Holidays page on australia.gov.au. It is republished in a machine-readable
-format on data.gov.au. The dataset is an aggregate of published public holiday data on data.gov.au from 2014-2019. This data is correct at the time of publishing but is subject to change.
+format on data.gov.au. The dataset is an aggregate of published public holiday data on data.gov.au from 2014-2021. This data is correct at the time of publishing but is subject to change.
 }
 \section{Licence and Copyright}{
 

@@ -5,15 +5,15 @@
 
 [![Travis build
 status](https://travis-ci.org/deanmarchiori/ozdates.svg?branch=master)](https://travis-ci.org/deanmarchiori/ozdates)
-![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)
+![](https://img.shields.io/badge/lifecycle-maturing-blue.svg)
 
-The goal of `ozdates` is to provide historical data of important
-Australian dates to help with data analysis and time series modelling.
+The goal of `ozdates` is to provide tidy historical data of important
+Australian dates to help with data analysis.
 
 Current features:
 
   - `aus_public_holidays`: Australian Public Holidays Dates Machine
-    Readable Dataset 2014-2019 - transformed into tidy format. (Source:
+    Readable Dataset 2014-2021 - transformed into tidy format. (Source:
     <https://data.gov.au/dataset/australian-holidays-machine-readable-dataset>)
 
   - `aus_daylight_saving`: Historical start and end time of Australian
