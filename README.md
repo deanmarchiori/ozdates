@@ -13,7 +13,7 @@ Australian dates to help with data analysis.
 Current features:
 
   - `aus_public_holidays`: Australian Public Holidays Dates Machine
-    Readable Dataset 2014-2021 - transformed into tidy format. (Source:
+    Readable Dataset 2014-2022 - transformed into tidy format. (Source:
     <https://data.gov.au/dataset/australian-holidays-machine-readable-dataset>)
 
   - `aus_daylight_saving`: Historical start and end time of Australian
