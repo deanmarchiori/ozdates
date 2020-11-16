@@ -57,6 +57,9 @@ test_that("There are data from 2021", {
   expect_true("2021" %in% format(aus_public_holidays$date, "%Y"))
 })
 
+test_that("There are data from 2022", {
+  expect_true("2022" %in% format(aus_public_holidays$date, "%Y"))
+})
 
 
 
