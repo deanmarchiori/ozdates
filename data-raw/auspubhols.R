@@ -8,8 +8,19 @@ library(janitor)
 
 # raw data import ---------------------------------------------------------
 
-#' Data sourced from https://search.data.gov.au/dataset/ds-dga-b1bc6077-dadd-4f61-9f8c-002ab2cdff10/details?q=public%20holidays
-#' Available at: 2019-01-08
+
+#' Data sourced from https://data.gov.au/dataset/ds-dga-b1bc6077-dadd-4f61-9f8c-002ab2cdff10/details?q=dates
+#' Available at: 2020-11-16
+
+#### Australian Public Holidays 2022
+# Source: https://data.gov.au/data/dataset/b1bc6077-dadd-4f61-9f8c-002ab2cdff10/resource/d256f989-8f49-46eb-9770-1c6ee9bd2661/download/australian_public_holidays_2022.csv
+
+if (!file.exists("data-raw/auspubhols_2022.csv")) {
+  download.file("https://data.gov.au/data/dataset/b1bc6077-dadd-4f61-9f8c-002ab2cdff10/resource/d256f989-8f49-46eb-9770-1c6ee9bd2661/download/australian_public_holidays_2022.csv", "data-raw/auspubhols_2022.csv")
+}
+
+raw_2022 <- readr::read_csv('data-raw/auspubhols_2022.csv')
+
 
 #### Australian Public Holidays 2021
 # Source: https://data.gov.au/data/dataset/b1bc6077-dadd-4f61-9f8c-002ab2cdff10/resource/2dee10ef-2d0c-44a0-a66b-eb8ce59d9110/download/australian_public_holidays_2021.csv
@@ -89,7 +100,8 @@ raw_20142015 <- readr::read_csv('data-raw/auspubhols_2014-2015.csv') %>%
 
 # pre-process -------------------------------------------------------------
 
-aus_public_holidays <-  rbind(raw_2021,
+aus_public_holidays <-  rbind(raw_2022,
+                              raw_2021,
                               raw_2020,
                               raw_2019,
                               raw_20172018,
