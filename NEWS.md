@@ -1,3 +1,6 @@
+# ozdates 0.3.0
+* added 2022 australian public holiday datasets  
+
 # ozdates 0.2.0  
 
 ## Minor Changes  
