@@ -8,11 +8,13 @@
 
 <title>Australian Public Holidays — aus_public_holidays • ozdates</title>
 
+
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
 
 <!-- bootstrap-toc -->
@@ -36,10 +38,9 @@
 
 
 
+
 <meta property="og:title" content="Australian Public Holidays — aus_public_holidays" />
-
-<meta property="og:description" content="The dataset is an aggregate of published public holiday data on data.gov.au from 2014-2021." />
-
+<meta property="og:description" content="The dataset is an aggregate of published public holiday data on data.gov.au from 2014-2022." />
 
 
 
@@ -71,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">ozdates</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.3.0</span>
       </span>
     </div>
 
@@ -90,7 +91,6 @@
   <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/deanmarchiori/ozdates/">
@@ -117,16 +117,15 @@
     </div>
 
     <div class="ref-description">
-    
-    <p>The dataset is an aggregate of published public holiday data on data.gov.au from 2014-2021.</p>
-    
+    <p>The dataset is an aggregate of published public holiday data on data.gov.au from 2014-2022.</p>
     </div>
 
-    <pre class="usage"><span class='no'>aus_public_holidays</span></pre>
-        
+    <pre class="usage"><span class='va'>aus_public_holidays</span></pre>
+
+
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with five variables:</p><dl'>
+    <p>A data frame with five variables:</p><dl>
 <dt>date</dt><dd><p>public holiday date</p></dd>
 <dt>holiday_name</dt><dd><p>public holiday description</p></dd>
 <dt>information</dt><dd><p>description of the public holiday</p></dd>
@@ -134,22 +133,19 @@
 <dt>jurisdiction</dt><dd><p>the state in which the holiday applies</p></dd>
 
 </dl>
-    
+
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p><a href='https://data.gov.au/dataset/b1bc6077-dadd-4f61-9f8c-002ab2cdff10'>https://data.gov.au/dataset/b1bc6077-dadd-4f61-9f8c-002ab2cdff10</a></p>
-    
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>This data was collected from the Australian Public Holidays page on australia.gov.au. It is republished in a machine-readable
-format on data.gov.au. The dataset is an aggregate of published public holiday data on data.gov.au from 2014-2021. This data is correct at the time of publishing but is subject to change.</p>
-    
+format on data.gov.au. The dataset is an aggregate of published public holiday data on data.gov.au from 2014-2022. This data is correct at the time of publishing but is subject to change.</p>
     <h2 class="hasAnchor" id="licence-and-copyright"><a class="anchor" href="#licence-and-copyright"></a>Licence and Copyright</h2>
 
     
 
 <p>The use of this data must comply with Creative Commons Attribution 3.0 Australia: <a href='https://creativecommons.org/licenses/by/3.0/au/'>https://creativecommons.org/licenses/by/3.0/au/</a></p>
-    
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -166,7 +162,7 @@ format on data.gov.au. The dataset is an aggregate of published public holiday d
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

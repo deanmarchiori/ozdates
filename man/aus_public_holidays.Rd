@@ -4,14 +4,16 @@
 \name{aus_public_holidays}
 \alias{aus_public_holidays}
 \title{Australian Public Holidays}
-\format{A data frame with five variables:
+\format{
+A data frame with five variables:
 \describe{
 \item{date}{public holiday date}
 \item{holiday_name}{public holiday description}
 \item{information}{description of the public holiday}
 \item{more_information}{usually a link to further information or source}
 \item{jurisdiction}{the state in which the holiday applies}
-}}
+}
+}
 \source{
 \url{https://data.gov.au/dataset/b1bc6077-dadd-4f61-9f8c-002ab2cdff10}
 }
@@ -19,11 +21,11 @@
 aus_public_holidays
 }
 \description{
-The dataset is an aggregate of published public holiday data on data.gov.au from 2014-2021.
+The dataset is an aggregate of published public holiday data on data.gov.au from 2014-2022.
 }
 \details{
 This data was collected from the Australian Public Holidays page on australia.gov.au. It is republished in a machine-readable
-format on data.gov.au. The dataset is an aggregate of published public holiday data on data.gov.au from 2014-2021. This data is correct at the time of publishing but is subject to change.
+format on data.gov.au. The dataset is an aggregate of published public holiday data on data.gov.au from 2014-2022. This data is correct at the time of publishing but is subject to change.
 }
 \section{Licence and Copyright}{
 

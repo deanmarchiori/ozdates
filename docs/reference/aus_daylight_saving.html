@@ -8,11 +8,13 @@
 
 <title>Australian Daylight Saving Time Historical Dates — aus_daylight_saving • ozdates</title>
 
+
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
 
 <!-- bootstrap-toc -->
@@ -36,11 +38,10 @@
 
 
 
-<meta property="og:title" content="Australian Daylight Saving Time Historical Dates — aus_daylight_saving" />
 
+<meta property="og:title" content="Australian Daylight Saving Time Historical Dates — aus_daylight_saving" />
 <meta property="og:description" content="This data shows the historical start and end time of Australian daylight saving time
 dates according to the Australian Bureau of Meterology." />
-
 
 
 
@@ -72,7 +73,7 @@ dates according to the Australian Bureau of Meterology." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">ozdates</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.3.0</span>
       </span>
     </div>
 
@@ -91,7 +92,6 @@ dates according to the Australian Bureau of Meterology." />
   <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/deanmarchiori/ozdates/">
@@ -118,47 +118,42 @@ dates according to the Australian Bureau of Meterology." />
     </div>
 
     <div class="ref-description">
-    
     <p>This data shows the historical start and end time of Australian daylight saving time
 dates according to the Australian Bureau of Meterology.</p>
-    
     </div>
 
-    <pre class="usage"><span class='no'>aus_daylight_saving</span></pre>
-        
+    <pre class="usage"><span class='va'>aus_daylight_saving</span></pre>
+
+
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with four variables:</p><dl'>
+    <p>A data frame with four variables:</p><dl>
 <dt>season_start</dt><dd><p>year of the starting period of DST</p></dd>
 <dt>state</dt><dd><p>state the time is adjusted for</p></dd>
 <dt>dst_start_date</dt><dd><p>start date of DST, with the change occuring at 0200 Local Standard Time</p></dd>
 <dt>dst_finish_date</dt><dd><p>end date of DST, with the change from DST to standard time at 0300</p></dd>
 
 </dl>
-    
+
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p><a href='http://www.bom.gov.au/climate/averages/tables/dst_times.shtml'>http://www.bom.gov.au/climate/averages/tables/dst_times.shtml</a></p>
-    
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>In all the cases listed, the change to Daylight Saving Time took place at
 0200 Local Standard Time on the day concerned, and from Daylight Saving Time
 to standard time at 0300. Data Current as of : 2017-12-12</p>
-    
     <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>
 
     <p>The Bureau of Meteorology does not have responsibility for managing
 Daylight Saving Time. This is a State responsibility and you should contact
 the relevant State Government authority
 <a href='https://www.australia.gov.au/about-australia/facts-and-figures/time-zones-and-daylight-saving'>https://www.australia.gov.au/about-australia/facts-and-figures/time-zones-and-daylight-saving</a>.</p>
-    
     <h2 class="hasAnchor" id="licence-and-copyright"><a class="anchor" href="#licence-and-copyright"></a>Licence and Copyright</h2>
 
     
 
 <p>Use in accordance with copyright conditions: <a href='http://www.bom.gov.au/other/copyright.shtml?ref=ftr'>http://www.bom.gov.au/other/copyright.shtml?ref=ftr</a></p>
-    
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -175,7 +170,7 @@ the relevant State Government authority
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

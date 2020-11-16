@@ -4,13 +4,15 @@
 \name{aus_daylight_saving}
 \alias{aus_daylight_saving}
 \title{Australian Daylight Saving Time Historical Dates}
-\format{A data frame with four variables:
+\format{
+A data frame with four variables:
 \describe{
 \item{season_start}{year of the starting period of DST}
 \item{state}{state the time is adjusted for}
 \item{dst_start_date}{start date of DST, with the change occuring at 0200 Local Standard Time}
 \item{dst_finish_date}{end date of DST, with the change from DST to standard time at 0300}
-}}
+}
+}
 \source{
 \url{http://www.bom.gov.au/climate/averages/tables/dst_times.shtml}
 }

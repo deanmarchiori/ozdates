@@ -1,6 +1,6 @@
 Package: ozdates
 Title: Important Australian Dates for Data Analysis
-Version: 0.2.0
+Version: 0.3.0
 Authors@R: 
     person(given = "Dean",
            family = "Marchiori",
@@ -16,4 +16,4 @@ Depends: R (>= 3.0.1)
 Suggests:
     testthat
 Language: en-US
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.1
