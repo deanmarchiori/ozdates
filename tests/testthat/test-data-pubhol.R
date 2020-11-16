@@ -61,5 +61,7 @@ test_that("There are data from 2022", {
   expect_true("2022" %in% format(aus_public_holidays$date, "%Y"))
 })
 
-
+test_that("The date column is in date format", {
+  expect_s3_class(aus_public_holidays$date, "Date")
+  })
 
